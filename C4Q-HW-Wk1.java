@@ -1,6 +1,7 @@
 package nycc4q;
 
 /* Rafat Khandaker - C4Q - Homework Week 1
+From problems 1 to 13 // Run through on intellij or Repl
 This program was written with Intelli J  and does not run on Repl.it
 
    #1                                       */
@@ -15,65 +16,101 @@ class Main {
         System.out.println("This is example 1 -- Add-Function: ");
         lineBreak("");
 
-            System.out.println("");
+        System.out.println("");
 
-           int a = Scanner();
-           int b = Scanner();
+            int a = Scanner();
+            int b = Scanner();
 
-                addFunction(a, b);
+             addFunction(a, b);
 
         lineBreak("");
         System.out.println("This is example 2 --Age-Calculator");
         lineBreak("");
 
-                ageCalculator(a, b);
+             ageCalculator(a, b);
 
         lineBreak("");
         System.out.println("This is example 3 --X's and Oh's");
         lineBreak("");
 
-                exesAndOhs();
+             exesAndOhs();
 
         lineBreak("");
         System.out.println("This is example 4 -- end with ly");
         lineBreak("");
 
-               endsly();
+             endsly();
 
         lineBreak("");
         System.out.println("This is example 5 -- Chess Board");
         lineBreak("");
 
             int x = Scanner();
-               chessboard(x);
+            chessboard(x);
 
         lineBreak("");
         System.out.println("This is example 6 -- Hungry Hippo");
         lineBreak("");
 
-               hungryHippo();
+            hungryHippo();
 
         lineBreak("");
         System.out.println("This is example 7 -- elide ");
         lineBreak("");
 
-               elide();
+            elide();
 
         lineBreak("");
         System.out.println("This is example 8 -- Triangle-Loop ");
         lineBreak("");
 
-                triangleLoop();
+            triangleLoop();
 
         lineBreak("");
         System.out.println("This is example 9 -- String-Parameter ");
         lineBreak("");
 
-                countCode();
+
+            String l = "aaacodebbb";
+            String y = "codexxxcode";
+            String z = "cozexxcope";
+
+                System.out.println("aaacodebbb");
+                countCode(l);
+                System.out.println("codexxxcode");
+                countCode(y);
+                System.out.println("cozexxcope");
+                countCode(z);
+
+        lineBreak("");
+        System.out.println(" This function will count the vowels there are within a string");
+        lineBreak("");
+
+                countVowel();
+
+        lineBreak("");
+        System.out.println("This is example 11 - Cut a String at Character");
+        lineBreak("");
+
+            cutString();
+
+
+        lineBreak("");
+        System.out.println(" This is example 12 - twelve-days ");
+        lineBreak("");
+
+            twelveDays();
+
+        lineBreak("");
+        System.out.println(" This is example 13 - nner icescream startup ");
+        lineBreak("");
+
+            iceScream();
 
         lineBreak("");
         System.out.println(" Thank you for running my Homework  -- Rafat Khandaker :)");
         lineBreak("");
+
     }
 
 
@@ -81,7 +118,7 @@ class Main {
 
     public static void lineBreak(String line) {
 
-        System.out.println("_____________________________________");
+        System.out.println("___________________________________________________________________________");
 
     }
 
@@ -253,46 +290,248 @@ class Main {
         int x = Scanner();
         String triangle = "";
 
-        for (int i = 0; i <= x; i++) {
+        for (int i = 0; i < x; i++) {
 
-            System.out.println("");
-            int y = 0;
-            int w = 0;
-            y++;
-            while (w != y) {
-                triangle += "#";
-                System.out.print(triangle);
-                w++;
-            }
+            triangle += "#";
+            System.out.println(triangle);
+
         }
-
     }
 
-    // This is example 9 For the count-code function
+// This is example 9 For the count-code function
+
+    /*    public static void countCode() {
+            System.out.println("This function will tell us how many times the string code appears within a string: ");
+            System.out.println("Please enter a phrase or string value: ");
+            String phrase = Reader();
+            System.out.println("Please enter the parameter you want to measure within the string: ");
+            String measure = Reader();
+                int counter = 0;
+                int x = phrase.length() - 1;
+                int y = measure.length();
+                int z = 0;
+
+            for( int i = 0 ; i < phrase.length() ; i++) {
+              //  System.out.println(phrase.substring(i,y));
+                if(phrase.charAt(i) == measure.charAt(i)) {
+                    String check = "";
+                    System.out.println(phrase.charAt(i));
+                    while(z != measure.length()) {
+                        check += phrase.charAt(z);
+                        z++;
+                        System.out.println(check);
+                        if(check == "code"){
+                            counter++;
+                        }
+                    }
+                    System.out.println(check);
+                    System.out.println(counter);
+
+
+                }
+            }
+            System.out.println(counter);
+        } */
+
     public static void countCode() {
-            int result = 0;
         System.out.println("This function will tell us how many times the string code appears within a string: ");
         System.out.println("Please enter a phrase or string value: ");
         String phrase = Reader();
         System.out.println("Please enter the parameter you want to measure within the string: ");
         String measure = Reader();
-            int counter = 0;
-            int x = phrase.length() - 1;
-            int y = measure.length() - 1;
+        int counter = 0;
+        int x = phrase.length() - 1;
+        int y = measure.length();
+        int z = 0;
+        int i = 0;
+        int c = 0;
+        int v = 0;
+        while (i != x) {
+            while (v != y && i < (phrase.length()-1) ) {
 
+                if (phrase.charAt(i) == measure.charAt(i)) {
+                    c++;
 
-        for( int i = 0 ; i < measure.length() ; i++) {
+                    //   System.out.println(c);
 
-            if (phrase.substring(i,y) == measure) {
-                y++;
-                counter++;
-            }else{
-                y++;
+                    System.out.println(measure.charAt(i));
+                    System.out.println(phrase.charAt(i));
+                    if (c == y) {
+                        counter++;
+                        System.out.println(counter);
+
+                    }
+
+                } else {
+                    c = 0;
+                    v = y-1;
+                }
+                v++;
             }
 
-            y++;
+            v = 0;
+
+            i++;
+
         }
 
         System.out.println(counter);
     }
+
+
+    public static void countCode(String input) {
+        int counter = 0;
+        int i = 0;
+        System.out.println("This code will measure how many times a string appears within a string");
+        while (i < input.length()) {
+            if (input.toLowerCase().charAt(i) == 'c' && input.toLowerCase().charAt(i + 1) == 'o' && input.toLowerCase().charAt(i + 3) == 'e') {
+                counter++;
+            }
+
+            i++;
+        }
+        System.out.println(counter);
+    }
+
+
+    // This is example 10 Count The Vowels Function
+
+    public static void countVowel() {
+        int counter = 0;
+        int i = 0;
+        int j = 0;
+
+        char [] vowel = {'a','e','i','o','u',};
+        String input = Reader();
+        while (i < input.length()){
+            while(j < 5 ) {
+                if (input.toLowerCase().charAt(i) == vowel[j]) {
+                   counter++;
+                }
+                j++;
+            }
+            j=0;
+            i++;
+        }
+
+        System.out.println(counter);
+
+    }
+
+    public static void cutString() {
+        System.out.println("This function will separate a string from a char");
+        System.out.println("Please enter a phrase: ");
+        String input = Reader();
+        System.out.println("Please enter a letter to locate: ");
+        Scanner sc = new Scanner(System.in);
+        String position = sc.next();
+        int l = 0;
+        int m = 1;
+        for (int i = 0; i < input.length(); i++) {
+            if (input.toLowerCase().charAt(i) == position.toLowerCase().charAt(0)) {
+                l = m;
+                int y = input.length();
+                System.out.println(input.substring(i, y));
+            }
+            // use to terminate the loop
+            if (l == m) {
+                i = input.length();
+            }
+        }
+    }
+// This is example 12 function twelve days of christmas
+    public static void twelveDays(){
+        String christmasDay = ("On the first day of Christmas, my true love gave to me a partridge in a pear tree.\n" +
+                "On the second day of Christmas my true love gave to me two turtle doves\n" +
+                "And a partridge in a pear tree.\n" +
+                "On the third day of Christmas my true love gave to me three French hens,\n" +
+                "Two turtle doves, and a Partridge in a pear tree.\n" +
+                "On the fourth day of Christmas my true love gave to me\n" +
+                "Four calling birds, three French hens, two turtle doves and a Partridge in a pear tree.\n" +
+                "On the fifth day of Christmas my true love gave to me five golden rings,\n" +
+                "Four calling birds, three French hens, two turtle doves and a Partridge in a pear tree.\n" +
+                "On the sixth day of Christmas my true love gave to me six geese a laying,\n" +
+                "Five golden rings, four calling birds, three French hens, two turtle doves\n" +
+                "And a Partridge in a pear tree.\n" +
+                "On the seventh day of Christmas my true love gave to me seven swans a swimming,\n" +
+                "Six geese a laying, five golden rings, four calling birds, three French hens,\n" +
+                "Two turtle doves and a Partridge in a pear tree.\n" +
+                "On the eighth day of Christmas my true love gave to me eight maids a milking,\n" +
+                "Seven swans a swimming, six geese a laying, five golden rings, four calling birds,\n" +
+                "Three French hens, two turtle doves and a Partridge in a pear tree.\n" +
+                "On the ninth day of Christmas my true love gave to me nine ladies dancing,\n" +
+                "Eight maids a milking, seven swans a swimming, six geese a laying, five golden rings,\n" +
+                "Four calling birds, three French hens, two turtle doves and a Partridge in a pear tree.\n" +
+                "On the tenth day of Christmas my true love gave to me ten lords a leaping,\n" +
+                "Nine ladies dancing, eight maids a milking, seven swans a swimming, six geese a laying,\n" +
+                "Five golden rings, four calling birds, three French hens, two turtle doves\n" +
+                "And a Partridge in a pear tree.\n" +
+                "On the eleventh day of Christmas my true love gave to me eleven pipers piping,\n" +
+                "Ten lords a leaping nine ladies dancing, eight maids a milking, seven swans a swimming,\n" +
+                "Six geese a laying, five golden rings, four calling birds, three French hens,\n" +
+                "Two turtle doves and a Partridge in a pear tree.\n" +
+                "On the twelfth day of Christmas my true love gave to me twelve drummers drumming,\n" +
+                "Eleven pipers piping, ten lords a leaping nine ladies dancing, eight maids a milking,\n" +
+                "Seven swans a swimming, six geese a laying, five golden rings, four calling birds,\n" +
+                "Three French hens, two turtle doves and a Partridge in a pear tree.");
+        System.out.println(christmasDay);
+    }
+
+    // This is example 13 of the icescream service function
+
+    public static void iceScream(){
+        double totalPrice = 0;
+        System.out.println("This function will aid in your icescream selection and order ");
+        System.out.println("What is your name?: ");
+        String name = Reader();
+        System.out.println("Okay " + name + ", which flavor of ice scream would you like: ");
+        System.out.println( "(1) -> Vanilla, (2) -> Chocolate, (3) -> Strawberry");
+        int iceVal = Scanner();
+        int topCount = 0;
+            if(iceVal == 1 || iceVal == 2 || iceVal == 3){
+                totalPrice += 2.33;
+                System.out.println("Would you like chocolate chips?: (y or n) ");
+                String top1 = Reader();
+                    if(top1.toLowerCase().charAt(0) == 'y'){
+                        totalPrice += 0.33;
+                        topCount++;
+                    }else{}
+                System.out.println("Would you like bannanas?: (y or n)");
+                String top2 = Reader();
+                    if(top2.toLowerCase().charAt(0) == 'y'){
+                        totalPrice += 0.33;
+                        topCount++;
+                    }else{}
+                System.out.println("Would you like gummy bears?: (y or n)");
+                String top3 = Reader();
+                    if(top3.toLowerCase().charAt(0) == 'y'){
+                        totalPrice += 0.33;
+                        topCount++;
+                    }else{}
+                }
+            double randTime = Math.random()*60;
+            randTime =  Math.floor(randTime);
+
+            switch(iceVal){
+                case 1:
+                    System.out.println("Okay " + name + ", a Vanilla ice cream with " + topCount + " toppings. Your total is $" + totalPrice + "\nand your ice cream will arrive in " + randTime + " minutes.");
+                    break;
+                case 2:
+                    System.out.println("Okay " + name + ", a Chocolate ice cream with " + topCount + " toppings. Your total is $" + totalPrice + "\nand your ice cream will arrive in " + randTime + " minutes.");
+
+                    break;
+                case 3:
+                    System.out.println("Okay " + name + ", a Strawberry ice cream with " + topCount + " toppings. Your total is $" + totalPrice + "\nand your ice cream will arrive in " + randTime + " minutes.");
+
+                    break;
+                default:
+                    System.out.println("Have a nice day!");
+                    break;
+            }
+
+    }
+
 }
+
+
+

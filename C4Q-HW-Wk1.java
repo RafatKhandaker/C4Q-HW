@@ -39,8 +39,10 @@ class Main {
 
 
         lineBreak("");
+        System.out.println("This is example 4 -- end with ly");
         lineBreak("");
 
+        endsly();
 
 
     }
@@ -135,28 +137,29 @@ class Main {
     }
 // This is example 4 for the endsly method
 
-   /* public static boolean endsly(String phrase){
+    public static boolean endsly(){
 
-      System.out.println("This function will tell you if the suffix ends with "ly" of a word");
+        Scanner sc = new Scanner(System.in);
+      System.out.println("This function will tell you if the suffix ends with ly of a word");
       System.out.println("please enter a phrase with or without x's and o's: ");
-      String phrase = Scanner();
+      String phrase = sc.next();
 
-      int x = phrase.length - 1; // position of the second to last char
-      int y = phrase.length - 2; // position of the last char
+      int x = phrase.length() - 1; // position of the second to last char
+      int y = phrase.length() - 2; // position of the last char
       boolean result;
 
-      if( phrase.char[x] == "l" && phrase.getchar(y) == "y"){
+      if( phrase.charAt(x) == 'y' && phrase.charAt(y) == 'l'){
         result = true;
-        System.out.println(result + "This string ends with "ly"");
+        System.out.println(result + " This string ends with ly");
       }else{
         result = false;
-        System.out.println(result + "This string does not end with "ly"");
+        System.out.println(result + " This string does not end with ly");
       }
 
       return result;
     }
 
-    public static void chessboard(String board){
+   /* public static void chessboard(String board){
       System.out.println("This function will print out a chessboard: ");
 
       int j = 0;

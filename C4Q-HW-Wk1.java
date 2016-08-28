@@ -21,7 +21,6 @@ class Main {
         int a = Scanner();
         int b = Scanner();
 
-
         addFunction(a, b);
 
         lineBreak("");
@@ -34,17 +33,13 @@ class Main {
         System.out.println("This is example 3 --X's and Oh's");
         lineBreak("");
 
-
         exesAndOhs();
-
-
 
         lineBreak("");
         System.out.println("This is example 4 -- end with ly");
         lineBreak("");
 
         endsly();
-
 
     }
 

@@ -18,28 +18,28 @@ class Main {
 
         System.out.println("");
 
-        int a = Scanner();
-        int b = Scanner();
+            int a = Scanner();
+            int b = Scanner();
 
-        addFunction(a, b);
+                addFunction(a, b);
 
         lineBreak("");
         System.out.println("This is example 2 --Age-Calculator");
         lineBreak("");
 
-        ageCalculator(a, b);
+                ageCalculator(a, b);
 
         lineBreak("");
         System.out.println("This is example 3 --X's and Oh's");
         lineBreak("");
 
-        exesAndOhs();
+                exesAndOhs();
 
         lineBreak("");
         System.out.println("This is example 4 -- end with ly");
         lineBreak("");
 
-        endsly();
+                 endsly();
 
         lineBreak("");
         System.out.println("This is example 5 -- Chess Board");
@@ -48,15 +48,15 @@ class Main {
                 int x = Scanner();
                 chessboard(x);
 
-                lineBreak("");
-                System.out.println("This is example 6 -- Hungry Hippo");
-                lineBreak("");
+        lineBreak("");
+        System.out.println("This is example 6 -- Hungry Hippo");
+        lineBreak("");
 
                 hungryHippo();
 
 
 
-            }
+    }
 
 
 

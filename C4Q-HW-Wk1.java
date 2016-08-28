@@ -1,6 +1,7 @@
 package nycc4q;
 
 /* Rafat Khandaker - C4Q - Homework Week 1
+This program was written with Intelli J  and does not run on Repl.it 
 
    #1                                       */
 

@@ -11,7 +11,6 @@ class Main {
 
     public static void main(String[] args) {
 
-// This is example 1 in the homework " Add-Function"
         lineBreak("");
         System.out.println("This is example 1 -- Add-Function: ");
         lineBreak("");
@@ -90,7 +89,7 @@ class Main {
 
         }
 
-        //  This is example 1 for the Add-Function
+//  This is example 1 for the Add-Function
 
         public static int addFunction(int x, int y){
 
@@ -116,7 +115,7 @@ class Main {
             System.out.println("You are about " + result2 + " and " + result);
             return y - x;
         }
-        // This is example 3 for the Exe's and Oh's method
+// This is example 3 for the Exe's and Oh's method
         public static boolean exesAndOhs() {
             Scanner sc = new Scanner(System.in);
             System.out.println("This function will tell you if there are an equal amount of Xs and Os");
@@ -169,6 +168,7 @@ class Main {
             return result;
         }
 
+// This is example 5 for the chessboard method
         public static String chessboard(int size) {
             System.out.println("This function will print out a chessboard: ");
 
@@ -193,6 +193,7 @@ class Main {
         return spot;
     }
 
+// This is example 6 for the hungryHippo method
     public static void hungryHippo(){
         Scanner sc = new Scanner(System.in);
         System.out.println("This Program will determine if the Hippos at the Zoo will eat the food");

@@ -1,7 +1,7 @@
 package nycc4q;
 
 /* Rafat Khandaker - C4Q - Homework Week 1
-This program was written with Intelli J  and does not run on Repl.it 
+This program was written with Intelli J  and does not run on Repl.it
 
    #1                                       */
 
@@ -40,6 +40,12 @@ class Main {
         lineBreak("");
 
         endsly();
+
+        lineBreak("");
+        System.out.println("This is example 5 -- Chess Board");
+        lineBreak("");
+
+        chessboard();
 
     }
 
@@ -119,11 +125,11 @@ class Main {
                 y++;
             }
         }
-            if (y == x) {
-                result = true;
-            } else {
-                result = false;
-            }
+        if (y == x) {
+            result = true;
+        } else {
+            result = false;
+        }
 
         boolean resultVal = result;
         System.out.println(resultVal);
@@ -136,49 +142,50 @@ class Main {
     public static boolean endsly(){
 
         Scanner sc = new Scanner(System.in);
-      System.out.println("This function will tell you if the suffix ends with ly of a word");
-      System.out.println("please enter a phrase with or without x's and o's: ");
-      String phrase = sc.next();
+        System.out.println("This function will tell you if the suffix ends with ly of a word");
+        System.out.println("please enter a phrase with or without x's and o's: ");
+        String phrase = sc.next();
 
-      int x = phrase.length() - 1; // position of the second to last char
-      int y = phrase.length() - 2; // position of the last char
-      boolean result;
+        int x = phrase.length() - 1; // position of the second to last char
+        int y = phrase.length() - 2; // position of the last char
+        boolean result;
 
-      if( phrase.charAt(x) == 'y' && phrase.charAt(y) == 'l'){
-        result = true;
-        System.out.println(result + " This string ends with ly");
-      }else{
-        result = false;
-        System.out.println(result + " This string does not end with ly");
-      }
+        if( phrase.charAt(x) == 'y' && phrase.charAt(y) == 'l'){
+            result = true;
+            System.out.println(result + " This string ends with ly");
+        }else{
+            result = false;
+            System.out.println(result + " This string does not end with ly");
+        }
 
-      return result;
+        return result;
     }
 
-   /* public static void chessboard(String board){
+    public static void chessboard(){
       System.out.println("This function will print out a chessboard: ");
 
       int j = 0;
+      int i = 0;
+        String spot = "#";
 
-        for(int i = 0 ; i >= 8 ; i++){
+        for( i = 0 ; i >= 8 ; i++){
 
-          if(j == 8){
-            System.out.println(" ");
-            j = 1;
-          }
+            for( j = 0; j >= 8; j++){
 
-            for(int j ; j >= 8; j++){
-
-              if( j%2 != 0 ){
-                System.out.print("#");
-              }else{
-                System.out.println(" ");
+              if( j%2 != 0 ) {
+                  if (j == 8) {
+                      System.out.println(" ");
+                  }
+                  System.out.print(spot);
+                  }else{
+                      System.out.println(" ");
+                  }
               }
 
-              return j;
+
             }
         }
-      }
-    }
-  } */
+
+
+
 }

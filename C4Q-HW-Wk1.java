@@ -74,6 +74,8 @@ class Main {
         lineBreak("");
         System.out.println(" Thank you for running my Homework  -- Rafat Khandaker :)");
         lineBreak("");
+
+
     }
 
 
@@ -217,7 +219,7 @@ class Main {
         return spot;
     }
 
-    // This is example 6 for the Hungry-Hippo method
+// This is example 6 for the Hungry-Hippo method
     public static void hungryHippo() {
         Scanner sc = new Scanner(System.in);
         System.out.println("This Program will determine if the Hippos at the Zoo will eat the food");
@@ -233,7 +235,7 @@ class Main {
 
     }
 
-    // This is example 7 for the string elide return method
+// This is example 7 for the string elide return method
     public static void elide() {
         Scanner sc = new Scanner(System.in);
         System.out.println("This function will print out a word or statement depending on it's length: ");
@@ -253,7 +255,7 @@ class Main {
         int x = Scanner();
         String triangle = "";
 
-        for (int i = 0; i <= x; i++) {
+        for (int i = 0; i < x; i++) {
 
             System.out.println("");
             int y = 0;
@@ -265,10 +267,10 @@ class Main {
                 w++;
             }
         }
-
+        System.out.println("");
     }
 
-    // This is example 9 For the count-code function
+// This is example 9 For the count-code function
     public static void countCode() {
             int result = 0;
         System.out.println("This function will tell us how many times the string code appears within a string: ");
@@ -278,21 +280,24 @@ class Main {
         String measure = Reader();
             int counter = 0;
             int x = phrase.length() - 1;
-            int y = measure.length() - 1;
+            int y = measure.length();
 
-
-        for( int i = 0 ; i < measure.length() ; i++) {
+        for( int i = 0 ; i <= phrase.length() ; i++) {
+            System.out.println(phrase.substring(i,y));
 
             if (phrase.substring(i,y) == measure) {
                 y++;
-                counter++;
+               // i++;
+
+                System.out.println(counter);
             }else{
                 y++;
+                counter++;
             }
 
-            y++;
-        }
+            System.out.println(phrase.substring(i,y));
 
+        }
         System.out.println(counter);
     }
 }

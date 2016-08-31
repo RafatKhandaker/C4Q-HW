@@ -83,4 +83,87 @@ class Main {
         System.out.println("");
     }
 
+public static void tweetScan(String text) {
+        String mentions = "";
+        String hashtags = "";
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == '@') {
+                while ((text.charAt(i) != ' ') && i != text.length() - 1) {
+                    mentions += text.charAt(i);
+                    i++;
+                }
+                mentions += ' ';
+            } else if (text.charAt(i) == '#') {
+                while ((text.charAt(i) != ' ') && i != text.length() - 1) {
+                    hashtags += text.charAt(i);
+                    i++;
+                }
+                hashtags += ' ';
+            } else {
+                i++;
+            }
+        }
+
+        System.out.println("Mentions: " + mentions + "\n" + "Hashtags: " + hashtags);
+
+    }
+
+    public static void twitterMentionsArray(String tweet) {
+        String[] words = tweet.split(" ");
+        String mentions = "Mentions: ";
+        String hashtags = "Hashtags: ";
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            if (word.charAt(0) == '#') {
+                hashtags += word + " ";
+            } else if (word.charAt(0) == '@') {
+                mentions += word + " ";
+            }
+        }
+        System.out.println(mentions);
+        System.out.println(hashtags);
+    }
+
+    public static void getHashTags(String tweet) {
+        Scanner scanner = new Scanner(tweet);
+        while (scanner.hasNext()) {
+            String word = scanner.next();
+            System.out.println(word);
+        }
+    }
+
+    public static void twitterMentions(String tweet) {
+        String mentions = "";
+        String hastags = "";
+
+        for (int i = 0; i < tweet.length(); i++) {
+            char c = tweet.charAt(i);
+            switch (c) {
+                case '@':
+                    System.out.println("We found an #");
+//                    int j=i;
+                    while (c != ' ' && i < tweet.length()) {
+                        mentions += tweet.charAt(i);
+                        i++;
+                        if (tweet.charAt(i) == ' ') {
+                            break;
+                        }
+
+                    }
+                    break;
+                case '#':
+                    System.out.println("We found a #");
+                    while (c != ' ' && i < tweet.length()) {
+                        hastags += tweet.charAt(i);
+                        i++;
+                        if (tweet.charAt(i) == ' ') {
+                            break;
+                        }
+                    }
+
+                default://fixme
+            }
+        }
+        System.out.println(mentions);
+    
 }

@@ -105,18 +105,24 @@ public class Main {
         printDelay(2,"Hello, welcome to Date Me!   |");
         printDelay(2,"What is your name: ______?   | ");
         String name = Read();
-        printDelay(2,"What is your favorite food between _______:  |");
+        printDelay(2,"What is your favorite cheat meal between _______:  |");
         System.out.println("(1) CheeseBurger | (2) Pizza | (3) Chicken Wings | (4)  Fish |  (5) Salad ");
         String food = Read();
         printDelay(2,"What is your best feature?   |");
         String feature = Read();
+        printDelay(2,"What do you find more enjoyable?: ");
+        System.out.println("(1) Dinner Cruise in the NYC harbor, late evening");
+        System.out.println("(2) Join a quick getaway tour group to see a new city");
+        System.out.println("(3) Go skiing and stay at a nice cabin in the winter, with indoor hot springs ");
+        System.out.println("(4) Keep it simple, Casual Movie and Dinner");
+        System.out.println("(5) kayaking in a lake somewhere ");
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"                                                               ****************************************************************");
-        printDelay(2,"Hello " + name + " You are in play date with 3 contestants!               **************************************************************************");
+        printDelay(2,"Hello " + name + ", You are in play date with 3 contestants!              **************************************************************************");
         printDelay(2,"You will ask each contestant one question per round..........  *****                                        __.-\"..--,__");
         printDelay(2,"At the end of each round, You will eliminate one contestant!   *****                               __..---\"  | _|    \"-_\\");
         printDelay(2,"                                                               *****                        __.---\"          | V|::.-\"-._D");
@@ -141,7 +147,7 @@ public class Main {
         printDelay(2,"                                                               *****         :..::..:::..  MMMMMMM:|");
         printDelay(2,"                                                               *****         \\:/ \\::::::::JMMMP\":/");
         printDelay(2,"                                                               *****           :Ao ':__.-'MMMP:::Y");
-
+        String start1 = Read();
 
 
 

@@ -199,7 +199,43 @@ public class Main {
         printDelay(2,"     Just to be a better man.                                  *****");
         printDelay(2,"     Enter a Value to Continue:....                            *****");
 
-        int start2 = Scan();
+        String start2 = Read();
+        clearScreen();
+
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"                                                               ****************************************************************");
+        printDelay(2,"                                                               ****************************************************************");
+        printDelay(2,"Introducing Contestant number 2!                               ");
+        printDelay(2,"                                                               *****            ,--'.::::::.`-._");
+        printDelay(2,"      Contestant number 2 is a successful Engineer             *****           |..::::::::::::..\\");
+        printDelay(2,"      He graduated out of Albert Einstein College              *****          |.\\\\.:::::::-;:::::|");
+        printDelay(2,"      Institute of Technology                                  *****          |:\\:.::::::/  \\::::|");
+        printDelay(2,"      He Sacrificed most of his life to  dedicated himself     *****          || `------'   _|:::|");
+        printDelay(2,"      to his work and hasn't had a lot of time to have fun.    *****          ||            `;:::|");
+        printDelay(2,"      He desire to meet a modest Woman, who would              *****          |' ====  ====  |-::|");
+        printDelay(2,"      one day, make a fine lady and amazing mother.            *****          |  ___   ____  |O):|");
+        printDelay(2,"                                                               *****          |  ` |   `    |/::'");
+        printDelay(2,"                                                               *****          |    '        |::|");
+        printDelay(2," Here is what he has to say:                                   *****          .    v        |:/");
+        printDelay(2,"                                                               *****          |             ||");
+        printDelay(2," --> I'm looking for someone to                                *****          |   ___       ||");
+        printDelay(2,"     fulfill my life with.                                     ***** |         \\   --    _/ |");
+        printDelay(2,"     I dated many woman, couldn't really find                  ***** |          \\_____.-' __/-.");
+        printDelay(2,"     what is right for me.                                     *****            _|      _/|::.\\.::-._");
+        printDelay(2,"                                                               *****       _,--/:|\\_  _/  |.::.|.:::::-._");
+        printDelay(2,"     I'm busy most of the time                                 *****   ___/::./:.|_ \\/| __|.::.|.:.:::::::-._");
+        printDelay(2,"     but I always dream't to travel the world                  *****--::::::./::.88b|||d888.:::.|.:::::::::::\\");
+        printDelay(2,"     with someone special.                                     *****|;:::::::.|.::.8888|88888.:::.|.::::::::::::");
+        printDelay(2,"                                                               *****|;:::::::.|.::.888'|`888'.:::.|.::::::/.::::");
+        printDelay(2,"     That person is very hard to find.                         *****|;:::::::.|.::.|  |||  |.::::.|.:::::|.:::::");
+        printDelay(2,"                                                               *****-.__`::::.|.. .|  |||  |. . .|.::::::|.:::::");
+        printDelay(2,"     (1) Enter a Value to Continue:....                            *****./..`--.`.:|.::.| ||| |.::::.|.::::::|.:::::");
+
+        String start3 = Read();
     }
 
 

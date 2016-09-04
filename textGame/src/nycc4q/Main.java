@@ -173,7 +173,7 @@ public class Main {
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"                                                               ****************************************************************");
         printDelay(2,"                                                               ****************************************************************");
-        printDelay(2,"Introducing Contestant number 1!                               ");
+        printDelay(2,"Introducing Contestant number 1!                               *****");
         printDelay(2,"                                                               *****                  /////'");
         printDelay(2," Contestant number 1 is a hard head, he grew up in the mean    *****                 '  # o");
         printDelay(2," Streets of crooklyn. He's been through a lot of               *****                 C   - |");

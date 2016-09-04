@@ -22,8 +22,10 @@ public class Main {
         lineBreak("");
         System.out.println("                                             WELCOME TO PLAY DATE ME");
         lineBreak("");
+
             enterGame();
             startStory();
+
 
         lineBreak("");
             System.out.println("Enter a value to continue: ");
@@ -71,6 +73,12 @@ public class Main {
     public static void lineBreak(String input){
         System.out.println("_________________________________________________________________________________________________________________________________________");
     }
+
+    public static void clearScreen(){
+        for (int i = 0 ; i < 5 ; i++) {
+            System.out.println("\n \n \n \n \n");
+        }
+    }
     ////////////////////////////////////////////////////////////////////////////////
     // Useful Methods ///
     public static int Scan(){
@@ -104,18 +112,26 @@ public class Main {
         System.out.println("\n \n ");
         printDelay(2,"Hello, welcome to Date Me!   |");
         printDelay(2,"What is your name: ______?   | ");
+
         String name = Read();
         printDelay(2,"What is your favorite cheat meal between _______:  |");
+
         System.out.println("(1) CheeseBurger | (2) Pizza | (3) Chicken Wings | (4)  Fish |  (5) Salad ");
         String food = Read();
+
         printDelay(2,"What is your best feature?   |");
         String feature = Read();
+
         printDelay(2,"What do you find more enjoyable?: ");
-        System.out.println("(1) Dinner Cruise in the NYC harbor, late evening");
-        System.out.println("(2) Join a quick getaway tour group to see a new city");
-        System.out.println("(3) Go skiing and stay at a nice cabin in the winter, with indoor hot springs ");
-        System.out.println("(4) Keep it simple, Casual Movie and Dinner");
-        System.out.println("(5) kayaking in a lake somewhere ");
+            System.out.println("(1) Dinner Cruise in the NYC harbor, late evening");
+            System.out.println("(2) Join a quick getaway tour group to see a new city");
+            System.out.println("(3) Go skiing and stay at a nice cabin in the winter, with indoor hot springs ");
+            System.out.println("(4) Keep it simple, Casual Movie and Dinner");
+            System.out.println("(5) kayaking in a lake somewhere ");
+          int activity = Scan();
+
+        clearScreen();
+
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"*******************************************************************************************************************************");
@@ -129,7 +145,7 @@ public class Main {
         printDelay(2,"                                                               *****                   _--\"\".-.._   ,,::::::'\"\\/\"\"'-:-:/");
         printDelay(2,"                                                               *****              _.-\"\"::_:_:::::'-8b---\"            \"'");
         printDelay(2,"          ARE YOU READY TO PLAY DATE ?                         *****           .-/  ::::<  |\\::::::\"\\");
-        printDelay(2,"                                                               *****           \\/:::/::::'\\\\ |:::b::\\");
+        printDelay(2,"            (1) Enter 1 to continue                            *****           \\/:::/::::'\\\\ |:::b::\\");
         printDelay(2,"                                                               *****           /|::/:::/::::-::b:%b:\\|");
         printDelay(2,"                                                               *****            \\/::::d:|8:::b:\"%%%%%\\");
         printDelay(2,"                                                               *****            |\\:b:dP:d.:::%%%%%\"\"\"-,");
@@ -147,10 +163,43 @@ public class Main {
         printDelay(2,"                                                               *****         :..::..:::..  MMMMMMM:|");
         printDelay(2,"                                                               *****         \\:/ \\::::::::JMMMP\":/");
         printDelay(2,"                                                               *****           :Ao ':__.-'MMMP:::Y");
-        String start1 = Read();
 
+        int start1 = Scan();
+        clearScreen();
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"                                                               ****************************************************************");
+        printDelay(2,"                                                               ****************************************************************");
+        printDelay(2,"Introducing Contestant number 1!                               ");
+        printDelay(2,"                                                               *****                  /////'");
+        printDelay(2," Contestant number 1 is a hard head, he grew up in the mean    *****                 '  # o");
+        printDelay(2," Streets of crooklyn. He's been through a lot of               *****                 C   - |");
+        printDelay(2," difficult situations that forced him to use his Brawns,       *****    ___          '  =__'        ___");
+        printDelay(2," Instead of his Brain. Getting into plenty of street fights    *****   (` _ \\_       |   |        _/  ')");
+        printDelay(2," With hardened criminals in the past; in the back of empty     *****    \\  (__\\  ,---- _ |----.  /__)- |");
+        printDelay(2," Lots, back alleys, city project basements. Standing 6 ft tall *****     \\__  ( (           /  ) )  __/");
+        printDelay(2," weighing in at 175 lbs                                        *****       |_X_\\/ \\.   #  _.|  \\/_X_|");
+        printDelay(2,"                                                               *****         |  \\ /(   /    /\\ /  |");
+        printDelay(2,"                                                               *****          \\ /  (  ,    /  \\ _/");
+        printDelay(2," Here is what he has to say:                                   *****               /______/");
+        printDelay(2,"                                                               *****              [:::::::]");
+        printDelay(2," --> Ey, Yo ma, I think you beautiful!                         *****             /*%*%*%*%*\\");
+        printDelay(2,"     Damn Girl ! Just look at you.                             *****             >%*%#%*%*%|");
+        printDelay(2,"     I'd give up all my non-sense                              *****            /%*%*#*%*%*\\");
+        printDelay(2,"     Just to be with you.                                      *****           ######^######  b'ger");
+        printDelay(2,"                                                               *****");
+        printDelay(2,"     I think the most attractive  thing about you is:          *****");
+        printDelay(2,"     Your "+ feature + " all of it !                           *****");
+        printDelay(2,"                                                               *****");
+        printDelay(2,"                                                               *****");
+        printDelay(2,"     I wish I can take back everything in my past              *****");
+        printDelay(2,"     Just to be a better man.                                  *****");
+        printDelay(2,"     Enter a Value to Continue:....                            *****");
 
-
+        int start2 = Scan();
     }
 
 

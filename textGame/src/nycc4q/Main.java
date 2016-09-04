@@ -192,7 +192,7 @@ public class Main {
         printDelay(2,"     Just to be with you.                                      *****           ######^######  b'ger");
         printDelay(2,"                                                               *****");
         printDelay(2,"     I think the most attractive  thing about you is:          *****");
-        printDelay(2,"     Your "+ feature + " all of it !                           *****");
+        printDelay(2,"     Your "+ feature + ", all of it !                          *****");
         printDelay(2,"                                                               *****");
         printDelay(2,"                                                               *****");
         printDelay(2,"     I wish I can take back everything in my past              *****");

@@ -26,6 +26,9 @@ public class Main {
             startStory();
 
         lineBreak("");
+            System.out.println("Enter a value to continue: ");
+            int end = Scan();
+        lineBreak("");
         System.out.println("-----------------------------------------------------END OF THE GAME---------------------------------------------------------------");
 
         printDelay(2, "                                                    ,        ,");
@@ -114,19 +117,35 @@ public class Main {
         printDelay(2,"*******************************************************************************************************************************");
         printDelay(2,"                                                               ****************************************************************");
         printDelay(2,"Hello " + name + " You are in play date with 3 contestants!               **************************************************************************");
-        printDelay(2,"You will ask each contestant one question per round..........  *****");
-        printDelay(2,"At the end of each round, You will eliminate one contestant!   *****");
-        printDelay(2,"                                                               *****");
-        printDelay(2,"                                                               *****");
-        printDelay(2,"                                                               *****");
-        printDelay(2,"          ARE YOU READY TO PLAY DATE ?                         *****");
-        printDelay(2,"");
-        printDelay(2,"");
-        printDelay(2,"");
-        printDelay(2,"");
-        printDelay(2,"");
-        printDelay(2,"");
+        printDelay(2,"You will ask each contestant one question per round..........  *****                                        __.-\"..--,__");
+        printDelay(2,"At the end of each round, You will eliminate one contestant!   *****                               __..---\"  | _|    \"-_\\");
+        printDelay(2,"                                                               *****                        __.---\"          | V|::.-\"-._D");
+        printDelay(2,"                                                               *****                   _--\"\".-.._   ,,::::::'\"\\/\"\"'-:-:/");
+        printDelay(2,"                                                               *****              _.-\"\"::_:_:::::'-8b---\"            \"'");
+        printDelay(2,"          ARE YOU READY TO PLAY DATE ?                         *****           .-/  ::::<  |\\::::::\"\\");
+        printDelay(2,"                                                               *****           \\/:::/::::'\\\\ |:::b::\\");
+        printDelay(2,"                                                               *****           /|::/:::/::::-::b:%b:\\|");
+        printDelay(2,"                                                               *****            \\/::::d:|8:::b:\"%%%%%\\");
+        printDelay(2,"                                                               *****            |\\:b:dP:d.:::%%%%%\"\"\"-,");
+        printDelay(2,"                                                               *****             \\:\\.V-/ _\\b%P_   /  .-._");
+        printDelay(2,"                                                               *****             '|T\\   \"%j d:::--\\.(    \"-.");
+        printDelay(2,"                                                               *****             ::d<   -\" d%|:::do%P\"-:.   \"-,");
+        printDelay(2,"                                                               *****             |:I _    /%%%o::o8P    \"\\.    \"\\");
+        printDelay(2,"                                                               *****              \\8b     d%%%%%%P\"\"-._ _ \\::.    \\");
+        printDelay(2,"                                                               *****              \\%%8  _./Y%%P/      .::'-oMMo    )");
+        printDelay(2,"                                                               *****                H\"'|V  |  A:::...:odMMMMMM(  ./");
+        printDelay(2,"                                                               *****                H /_.--\"JMMMMbo:d##########b/");
+        printDelay(2,"                                                               *****             .-'o      dMMMMMMMMMMMMMMP\"\"");
+        printDelay(2,"                                                               *****           /\" /       YMMMMMMMMM|");
+        printDelay(2,"                                                               *****         /   .   .    \"MMMMMMMM/");
+        printDelay(2,"                                                               *****         :..::..:::..  MMMMMMM:|");
+        printDelay(2,"                                                               *****         \\:/ \\::::::::JMMMP\":/");
+        printDelay(2,"                                                               *****           :Ao ':__.-'MMMP:::Y");
+
+
+
 
     }
+
 
 }

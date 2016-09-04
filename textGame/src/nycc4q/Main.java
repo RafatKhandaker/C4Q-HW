@@ -236,6 +236,43 @@ public class Main {
         printDelay(2,"     (1) Enter a Value to Continue:....                            *****./..`--.`.:|.::.| ||| |.::::.|.::::::|.:::::");
 
         String start3 = Read();
+        clearScreen();
+
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"*******************************************************************************************************************************");
+        printDelay(2,"                                                               ****************************************************************");
+        printDelay(2,"                                                               ****************************************************************");
+        printDelay(2,"Introducing Contestant number 3!                               *****");
+        printDelay(2,"                                                               *****                         ..sSs$$$$$$b.                                      ");
+        printDelay(2,"      Contestant number 3 is a student learning Computer       *****                       .$$$$$$$$$$$$$$$.");
+        printDelay(2,"      Science, He works to pay his bills. He is realistic      *****                    .$$$$$$$$$$$$$$$$$$$$$b");
+        printDelay(2,"      about life, while working towards a better future.       *****                    .$$$$$$$$$$$$$$$$$$$$$");
+        printDelay(2,"      He has a positive mindset and pleasant to be around.     *****                    .$$$$$$$$$$$$$$$$$$$$$");
+        printDelay(2,"      He has many interests and is pretty talented in          *****                 $$$$$$$$$$$$$$$$$S'   `$$$$                                 ");
+        printDelay(2,"      surprisingly, many activities.                           *****                 $$$$$$$$$$$$$$S'        $$$                                 ");
+        printDelay(2,"                                                               *****                 $$$$$$$$$$$$$$S'        $$$                                 ");
+        printDelay(2,"                                                               *****                 `$$$$$$$$$$$$$           `$$$.                              ");
+        printDelay(2,"                                                               *****                   `$$$$$$$$$'       .s$$$ $$ $                              ");
+        printDelay(2," Here is what he has to say:                                   *****                     $$$$$$$$$.sSs .s$$s\"   s s                              ");
+        printDelay(2,"                                                               *****                     $$$$$$$$$.sSs .s$$s\"   s s                              ");
+        printDelay(2," --> I'm Optomistic but I don't like to dwindle                *****                      `$$$$$$$$$$$s          $                               ");
+        printDelay(2,"     on missed opportunity.                                    *****                        $$$$$$$$$$$.    \",                                   ");
+        printDelay(2,"     I let things come, I let things go.                       *****                        `$$$$$$$$$$sS$                                       ");
+        printDelay(2,"     I believe whatever is right for me, will stay             *****        s$$$.            `$$$$$$$$$$$$.s\"'   .$.                             ");
+        printDelay(2,"                                                               *****        $$$$$.              `$$$$$$$$$$.    .$$$Ss.s$s.                      ");
+        printDelay(2,"     Come with me, my darling                                  *****         $$$$$.              `$$$$$$$$$P   .$$$$$$$$$$$$.                    ");
+        printDelay(2,"     Lets do the un-expected                                   *****         $$$$$$.               `$$$$$$$' .$$$$$$$$$$$$$$$$.                  ");
+        printDelay(2,"     live life on the edge                                     *****         `$$$$$$.                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s.          ");
+        printDelay(2,"                                                               *****           $$$$$$.                `$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$s.      ");
+        printDelay(2,"     Come share your world with mine....                       *****         .s$$$$$$$.                 `$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.    ");
+        printDelay(2,"                                                               *****         s  $$$$$$$.                .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.   ");
+        printDelay(2,"     (1) Enter a Value to Continue:....                        *****         `$$$$$$$$$$.             .$$$' $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.  ");
+
+        String start4 = Read();
+        clearScreen();
     }
 
 
